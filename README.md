@@ -30,18 +30,16 @@
 
 * **Unpunished** - *VP6 Shen fix.* - [Unpunished](https://github.com/TheUnpunished/vp6converter) 
 
-* **xan1242** - *For EA-GX.* - [Unpunished](https://github.com/xan1242) 
+* **xan1242** - *For EA-GX.* - [xan1242](https://github.com/xan1242) 
 
-* **Xentax** - *For QuickBms- Scripts.* - [Unpunished](https://github.com/xan1242)
+* **Xentax** - *For QuickBms- Scripts.*
 
 * **Luigi Auriemma** - *For QuickBms- Scripts.* - [Luigi Auriemma](https://aluigi.altervista.org/quickbms.htm)
 
-* **BlueSkyWestSide** - *Mounting the tools, make tools for diferent formats.* - [Luigi Auriemma](https://aluigi.altervista.org/quickbms.htm)
+* **BlueSkyWestSide** - *Mounting the tools, make tools for diferent formats.*
 
 ## RoadMap
 
-* []() FBX compatibility and upgrade to obj.
-* []() Compatibility for carbon.
-* []() Fixes ups, adding a file for hashes.
-* []() Add more shader and modes to compile.
-* []() Added a UI with 3DMatrix.
+* []() VP6 compiling. -  Done.
+* []() Mad compiling. - Done.
+* []() MPC and MPV compiling. - Done.
