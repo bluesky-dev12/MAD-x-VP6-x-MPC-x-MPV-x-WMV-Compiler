@@ -32,7 +32,7 @@
 
 * **xan1242** - *For EA-GX.* - [xan1242](https://github.com/xan1242) 
 
-* **Xentax** - *For QuickBms- Scripts.*
+* **Xentax** - *For QuickBms - Scripts.*
 
 * **Luigi Auriemma** - *For QuickBms- Scripts.* - [Luigi Auriemma](https://aluigi.altervista.org/quickbms.htm)
 
