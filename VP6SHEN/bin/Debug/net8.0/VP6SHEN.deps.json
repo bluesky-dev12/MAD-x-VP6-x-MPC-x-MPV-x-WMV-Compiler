@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VP6SHEN/1.0.0": {
+        "runtime": {
+          "VP6SHEN.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VP6SHEN/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
