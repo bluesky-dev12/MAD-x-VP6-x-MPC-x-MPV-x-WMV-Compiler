@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/bluesky-dev12/MAD-x-VP6-x-MPC-x-MPV-Compiler">
-    <img src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-30/256/Need-for-Speed-Carbon-new-1-icon.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/bluesky-dev12/MAD-x-VP6-x-MPC-x-MPV-Compiler/blob/main/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">MAD x VP6 x MPC x MPV Compiler</h3>
