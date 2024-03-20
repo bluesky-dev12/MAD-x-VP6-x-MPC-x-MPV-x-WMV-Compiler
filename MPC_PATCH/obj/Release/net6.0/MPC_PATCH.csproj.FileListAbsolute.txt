@@ -1,0 +1,14 @@
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\bin\Release\net6.0\MPC_PATCH.exe
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\bin\Release\net6.0\MPC_PATCH.deps.json
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\bin\Release\net6.0\MPC_PATCH.runtimeconfig.json
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\bin\Release\net6.0\MPC_PATCH.dll
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\bin\Release\net6.0\MPC_PATCH.pdb
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.GeneratedMSBuildEditorConfig.editorconfig
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.AssemblyInfoInputs.cache
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.AssemblyInfo.cs
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.csproj.CoreCompileInputs.cache
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.dll
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\refint\MPC_PATCH.dll
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.pdb
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\MPC_PATCH.genruntimeconfig.cache
+D:\NFSURemake\GitTools\MPC_PATCH\MPC_PATCH\obj\Release\net6.0\ref\MPC_PATCH.dll
