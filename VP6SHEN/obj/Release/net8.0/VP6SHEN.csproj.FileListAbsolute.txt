@@ -1,0 +1,14 @@
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\bin\Release\net8.0\VP6SHEN.exe
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\bin\Release\net8.0\VP6SHEN.deps.json
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\bin\Release\net8.0\VP6SHEN.runtimeconfig.json
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\bin\Release\net8.0\VP6SHEN.dll
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\bin\Release\net8.0\VP6SHEN.pdb
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.GeneratedMSBuildEditorConfig.editorconfig
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.AssemblyInfoInputs.cache
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.AssemblyInfo.cs
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.csproj.CoreCompileInputs.cache
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.dll
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\refint\VP6SHEN.dll
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.pdb
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\VP6SHEN.genruntimeconfig.cache
+D:\NFSURemake\GitTools\VP6SHEN\VP6SHEN\obj\Release\net8.0\ref\VP6SHEN.dll
