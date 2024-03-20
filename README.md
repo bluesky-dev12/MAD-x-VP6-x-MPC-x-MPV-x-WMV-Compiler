@@ -10,7 +10,7 @@
      This tool is compilation of tools that let's you compile wmv, mad, vp6, mpc and mpv.
      Usefull for your BB games. 
      This won't make the game freeze like the old tools. You can use all type if sound. Mono, stereo and surround.*
-     *Remember U1,U2 and MW games doesn't support 5.1.
+     *Remember U1 and U2 games doesn't support 5.1.
     <br/>
     <br/>
   </p>
