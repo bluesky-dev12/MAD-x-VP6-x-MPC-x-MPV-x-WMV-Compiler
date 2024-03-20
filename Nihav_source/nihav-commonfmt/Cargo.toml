@@ -1,0 +1,65 @@
+[package]
+name = "nihav_commonfmt"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+
+[dependencies.nihav_registry]
+path = "../nihav-registry"
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["h263", "mdct", "fft", "vq"]
+
+[dev-dependencies]
+nihav_realmedia = { path = "../nihav-realmedia", default-features=false, features = ["all_demuxers"] }
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_encoders", "all_muxers"]
+decoders = []
+demuxers = []
+encoders = []
+muxers = []
+all_demuxers = ["demuxer_avi", "demuxer_gif", "demuxer_mov", "demuxer_wav", "demuxer_y4m"]
+demuxer_avi = ["demuxers"]
+demuxer_gif = ["demuxers"]
+demuxer_mov = ["demuxers"]
+demuxer_wav = ["demuxers"]
+demuxer_y4m = ["demuxers"]
+all_muxers = ["muxer_avi", "muxer_gif", "muxer_wav", "muxer_y4m"]
+muxer_avi = ["muxers"]
+muxer_gif = ["muxers"]
+muxer_wav = ["muxers"]
+muxer_y4m = ["muxers"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+
+all_video_decoders = ["decoder_cinepak", "decoder_clearvideo", "decoder_gif", "decoder_jpeg", "decoder_rawvideo", "decoder_rawvideo_ms", "decoder_zmbv"]
+decoder_cinepak = ["decoders"]
+decoder_clearvideo = ["decoders"]
+decoder_gif = ["decoders"]
+decoder_jpeg = ["decoders"]
+decoder_rawvideo = ["decoders"]
+decoder_rawvideo_ms = ["decoders"]
+decoder_zmbv = ["decoders"]
+
+all_audio_decoders = ["decoder_pcm", "decoder_ts102366", "decoder_sipro", "decoder_atrac3", "decoder_aac"]
+decoder_pcm = ["decoders"]
+decoder_ts102366 = ["decoders"]
+decoder_sipro = ["decoders"]
+decoder_atrac3 = ["decoders"]
+decoder_aac = ["decoders"]
+
+all_encoders = ["all_video_encoders", "all_audio_encoders"]
+
+all_video_encoders = ["encoder_cinepak", "encoder_gif", "encoder_rawvideo", "encoder_zmbv"]
+encoder_cinepak = ["encoders"]
+encoder_gif = ["encoders"]
+encoder_rawvideo = ["encoders"]
+encoder_zmbv = ["encoders"]
+
+all_audio_encoders = ["encoder_pcm"]
+encoder_pcm = ["encoders"]

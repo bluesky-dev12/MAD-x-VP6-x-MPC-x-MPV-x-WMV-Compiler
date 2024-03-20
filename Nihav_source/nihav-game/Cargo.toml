@@ -1,0 +1,66 @@
+[package]
+name = "nihav_game"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+features = []
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["qmf"]
+
+[dev-dependencies]
+nihav_commonfmt = { path = "../nihav-commonfmt", default-features=false, features = ["all_demuxers"] }
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_muxers"]
+demuxers = []
+all_demuxers = ["demuxer_bmv", "demuxer_bmv3", "demuxer_cnm", "demuxer_fcmp", "demuxer_fst", "demuxer_gdv", "demuxer_hl_fmv", "demuxer_imax", "demuxer_q", "demuxer_sga", "demuxer_siff", "demuxer_smush", "demuxer_vmd", "demuxer_vx"]
+demuxer_bmv = ["demuxers"]
+demuxer_bmv3 = ["demuxers"]
+demuxer_cnm = ["demuxers"]
+demuxer_fcmp = ["demuxers"]
+demuxer_fst = ["demuxers"]
+demuxer_gdv = ["demuxers"]
+demuxer_hl_fmv = ["demuxers"]
+demuxer_imax = ["demuxers"]
+demuxer_q = ["demuxers"]
+demuxer_sga = ["demuxers"]
+demuxer_siff = ["demuxers"]
+demuxer_smush = ["demuxers"]
+demuxer_vmd = ["demuxers"]
+demuxer_vx = ["demuxers"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+decoders = []
+
+all_video_decoders = ["decoder_arxel_vid", "decoder_beam_fcp", "decoder_beam_vbv", "decoder_bmv", "decoder_bmv3", "decoder_fstvid", "decoder_gdvvid", "decoder_hl_fmv", "decoder_imax", "decoder_ipma", "decoder_midivid", "decoder_midivid3", "decoder_q", "decoder_sga", "decoder_smush_video", "decoder_vmd", "decoder_vx"]
+decoder_arxel_vid = ["decoders"]
+decoder_beam_fcp = ["decoders"]
+decoder_beam_vbv = ["decoders"]
+decoder_bmv = ["decoders"]
+decoder_bmv3 = ["decoders"]
+decoder_fstvid = ["decoders"]
+decoder_gdvvid = ["decoders"]
+decoder_hl_fmv = ["decoders"]
+decoder_imax = ["decoders"]
+decoder_ipma = ["decoders"]
+decoder_midivid = ["decoders"]
+decoder_midivid3 = ["decoders"]
+decoder_q = ["decoders"]
+decoder_sga = ["decoders"]
+decoder_smush_video = ["decoders"]
+decoder_vmd = ["decoders"]
+decoder_vx = ["decoders"]
+
+all_audio_decoders = ["decoder_fstaud", "decoder_lhst500f22", "decoder_smush_audio"]
+decoder_fstaud = ["decoders"]
+decoder_lhst500f22 = ["decoders"]
+decoder_smush_audio = ["decoders"]
+
+all_muxers = ["muxer_ea"]
+muxers = []
+muxer_ea = ["muxers"]

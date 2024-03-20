@@ -1,0 +1,51 @@
+[package]
+name = "nihav_duck"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["fft", "dsp_window", "blockdsp"]
+
+[dev-dependencies]
+nihav_commonfmt = { path = "../nihav-commonfmt", default-features=false, features = ["all_demuxers", "all_muxers"] }
+
+[features]
+default = ["all_decoders", "all_encoders", "all_demuxers"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+all_video_decoders = ["decoder_truemotion1", "decoder_truemotionrt", "decoder_truemotion2", "decoder_truemotion2x", "decoder_vp3", "decoder_vp4", "decoder_vp5", "decoder_vp6", "decoder_vp7", "decoder_vp8"]
+all_audio_decoders = ["decoder_dk3_adpcm", "decoder_dk4_adpcm", "decoder_on2avc"]
+decoders = []
+
+decoder_truemotion1 = ["decoders"]
+decoder_truemotionrt = ["decoders"]
+decoder_truemotion2 = ["decoders"]
+decoder_truemotion2x = ["decoders"]
+decoder_vp3 = ["decoders"]
+decoder_vp4 = ["decoders"]
+decoder_vp5 = ["decoders"]
+decoder_vp6 = ["decoders"]
+decoder_vp7 = ["decoders"]
+decoder_vp8 = ["decoders"]
+decoder_dk3_adpcm = ["decoders"]
+decoder_dk4_adpcm = ["decoders"]
+decoder_on2avc = ["decoders"]
+
+all_encoders = ["all_video_encoders"]
+all_video_encoders = ["encoder_truemotion1", "encoder_truemotionrt", "encoder_vp6", "encoder_vp7"]
+encoders = []
+
+encoder_truemotion1 = ["encoders"]
+encoder_truemotionrt = ["encoders"]
+encoder_vp6 = ["encoders"]
+encoder_vp7 = ["encoders"]
+
+all_demuxers = ["demuxer_ivf"]
+demuxers = []
+
+demuxer_ivf = ["demuxers"]

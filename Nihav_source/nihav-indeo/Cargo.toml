@@ -1,0 +1,41 @@
+[package]
+name = "nihav_indeo"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["h263", "fft", "dsp_window"]
+
+[dev-dependencies]
+nihav_commonfmt = { path = "../nihav-commonfmt", default-features=false, features = ["all_demuxers", "muxer_avi"] }
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_encoders"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+all_video_decoders = ["decoder_indeo2", "decoder_indeo3", "decoder_indeo4", "decoder_indeo5", "decoder_intel263"]
+all_audio_decoders = ["decoder_imc"]
+decoders = []
+
+decoder_imc = ["decoders"]
+decoder_indeo2 = ["decoders"]
+decoder_indeo3 = ["decoders"]
+decoder_indeo4 = ["decoders"]
+decoder_indeo5 = ["decoders"]
+decoder_intel263 = ["decoders"]
+
+all_demuxers = ["demuxer_ivf"]
+demuxers = []
+
+demuxer_ivf = ["demuxers"]
+
+all_encoders = ["all_video_encoders"]
+all_video_encoders = ["encoder_indeo3"]
+encoders = []
+
+encoder_indeo3 = ["encoders"]

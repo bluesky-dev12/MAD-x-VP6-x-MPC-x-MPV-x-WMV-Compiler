@@ -1,0 +1,38 @@
+[package]
+name = "nihav_llaudio"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+features = []
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["lpc"]
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_encoders", "all_muxers"]
+
+all_decoders = ["decoder_ape", "decoder_flac", "decoder_tta", "decoder_wavpack"]
+decoders = []
+decoder_ape = ["decoders"]
+decoder_flac = ["decoders"]
+decoder_tta = ["decoders"]
+decoder_wavpack = ["decoders"]
+
+all_demuxers = ["demuxer_ape", "demuxer_flac", "demuxer_tta", "demuxer_wavpack"]
+demuxers = []
+demuxer_ape = ["demuxers"]
+demuxer_flac = ["demuxers"]
+demuxer_tta = ["demuxers"]
+demuxer_wavpack = ["demuxers"]
+
+all_encoders = ["encoder_flac"]
+encoders = []
+encoder_flac = ["encoders"]
+
+all_muxers = ["muxer_flac"]
+muxers = []
+muxer_flac = ["muxers"]

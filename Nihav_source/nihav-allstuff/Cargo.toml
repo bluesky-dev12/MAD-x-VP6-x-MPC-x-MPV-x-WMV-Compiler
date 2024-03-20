@@ -1,0 +1,25 @@
+[package]
+name = "nihav_allstuff"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+nihav_core = { path = "../nihav-core" }
+nihav_commonfmt = { path = "../nihav-commonfmt" }
+nihav_duck = { path = "../nihav-duck" }
+nihav_flash = { path = "../nihav-flash" }
+nihav_game = { path = "../nihav-game" }
+nihav_indeo = { path = "../nihav-indeo" }
+nihav_itu = { path = "../nihav-itu" }
+nihav_llaudio = { path = "../nihav-llaudio" }
+nihav_misc = { path = "../nihav-misc" }
+nihav_mpeg = { path = "../nihav-mpeg" }
+nihav_ms = { path = "../nihav-ms" }
+nihav_qt = { path = "../nihav-qt" }
+nihav_rad = { path = "../nihav-rad" }
+nihav_realmedia = { path = "../nihav-realmedia" }
+nihav_vivo = { path = "../nihav-vivo" }
+
+[dev-dependencies]
+nihav_registry = { path = "../nihav-registry" }

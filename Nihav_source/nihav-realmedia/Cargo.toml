@@ -1,0 +1,50 @@
+[package]
+name = "nihav_realmedia"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["h263", "mdct", "blockdsp"]
+
+[dev-dependencies]
+nihav_commonfmt = { path = "../nihav-commonfmt", default-features=false, features = ["demuxer_y4m", "decoder_rawvideo"] }
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_encoders", "all_muxers"]
+demuxers = []
+all_demuxers = ["demuxer_real"]
+demuxer_real = ["demuxers"]
+muxers = []
+all_muxers = ["muxer_real"]
+muxer_real = ["muxers"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+decoders = []
+h263 = []
+
+all_video_decoders = ["decoder_realvideo1", "decoder_realvideo2", "decoder_realvideo3", "decoder_realvideo4", "decoder_realvideo6"]
+decoder_realvideo1 = ["h263", "decoders"]
+decoder_realvideo2 = ["h263", "decoders"]
+decoder_realvideo3 = ["decoders"]
+decoder_realvideo4 = ["decoders"]
+decoder_realvideo6 = ["decoders"]
+
+all_audio_decoders = ["decoder_realaudio144", "decoder_realaudio288", "decoder_cook", "decoder_ralf"]
+decoder_realaudio144 = ["decoders"]
+decoder_realaudio288 = ["decoders"]
+decoder_cook = ["decoders"]
+decoder_ralf = ["decoders"]
+
+all_encoders = ["all_video_encoders", "all_audio_encoders"]
+encoders = []
+
+all_video_encoders = ["encoder_rv40"]
+encoder_rv40 = ["encoders"]
+
+all_audio_encoders = ["encoder_cook"]
+encoder_cook = ["encoders"]

@@ -1,0 +1,38 @@
+[package]
+name = "nihav_flash"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["h263", "mdct", "dsp_window"]
+
+[features]
+default = ["all_decoders", "all_demuxers", "all_encoders", "all_muxers"]
+decoders = []
+demuxers = []
+encoders = []
+muxers = []
+all_demuxers = ["demuxer_flv"]
+demuxer_flv = ["demuxers"]
+
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+
+all_video_decoders = ["decoder_flv263", "decoder_flashsv"]
+decoder_flv263 = ["decoders"]
+decoder_flashsv = ["decoders"]
+
+all_audio_decoders = ["decoder_flv_adpcm", "decoder_asao"]
+decoder_flv_adpcm = ["decoders"]
+decoder_asao = ["decoders"]
+
+all_encoders = ["all_audio_encoders"]
+all_audio_encoders = ["encoder_flv_adpcm"]
+encoder_flv_adpcm = ["encoders"]
+
+all_muxers = ["muxer_flv"]
+muxer_flv = ["muxers"]

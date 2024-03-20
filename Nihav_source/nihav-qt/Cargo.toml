@@ -1,0 +1,35 @@
+[package]
+name = "nihav_qt"
+version = "0.1.0"
+authors = ["Kostya Shishkov <kostya.shishkov@gmail.com>"]
+edition = "2018"
+
+[dependencies.nihav_core]
+path = "../nihav-core"
+features = []
+
+[dependencies.nihav_codec_support]
+path = "../nihav-codec-support"
+features = ["blockdsp", "fft", "qmf"]
+
+[dev-dependencies]
+nihav_commonfmt = { path = "../nihav-commonfmt", default-features=false, features = ["all_demuxers"] }
+
+[features]
+default = ["all_decoders"]
+all_decoders = ["all_video_decoders", "all_audio_decoders"]
+decoders = []
+
+all_video_decoders = ["decoder_rle", "decoder_smc", "decoder_rpza", "decoder_svq1", "decoder_svq3"]
+decoder_rle = ["decoders"]
+decoder_smc = ["decoders"]
+decoder_rpza = ["decoders"]
+decoder_svq1 = ["decoders"]
+decoder_svq3 = ["decoders"]
+
+all_audio_decoders = ["decoder_ima_adpcm_qt", "decoder_mace", "decoder_qdm", "decoder_qdm2", "decoder_alac"]
+decoder_ima_adpcm_qt = ["decoders"]
+decoder_mace = ["decoders"]
+decoder_qdm = ["decoders"]
+decoder_qdm2 = ["decoders"]
+decoder_alac = ["decoders"]
