@@ -38,6 +38,8 @@
 
 * **BlueSkyWestSide** - *Mounting the tools, make tools for diferent formats.*
 
+* **Caio Yan & I Wish i was dead** - *For helping with testing.*
+
 ## RoadMap
 
 * []() VP6 compiling. -  Done.
