@@ -38,7 +38,7 @@
 
 * **BlueSkyWestSide** - *Mounting the tools, make tools for diferent formats.*
 
-* **Caio Yan & I Wish i was dead** - *For helping with testing.*
+* **Caio Yan & Guilherme & I Wish i was dead** - *For helping with testing.*
 
 ## RoadMap
 
